@@ -1,0 +1,25 @@
+:root{
+
+    --cor-primaria:#d35400;
+
+    --cor-secundaria:#f39c12;
+
+    --cor-fundo:#f7f7f7;
+
+    --cor-card:#ffffff;
+
+    --texto:#2c3e50;
+
+    --cinza:#777;
+
+    --borda:#dddddd;
+
+    --radius:12px;
+
+    --shadow:0 8px 25px rgba(0,0,0,.08);
+
+    --transition:.25s;
+
+    --largura:1200px;
+
+}

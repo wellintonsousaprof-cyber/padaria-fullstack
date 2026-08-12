@@ -1,0 +1,166 @@
+body {
+    background: var(--cor-fundo);
+    color: var(--texto);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: min(100% - 40px, var(--largura));
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.topo {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    box-shadow: var(--shadow);
+    z-index: 999;
+}
+
+.topo .container {
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-size: 32px;
+}
+
+
+/* =========================
+   MENU PRINCIPAL
+========================= */
+
+.menu-superior {
+    margin-left: auto;
+}
+
+.menu-superior > ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu-superior > ul > li {
+    position: relative;
+}
+
+.menu-superior a {
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.menu-superior a:hover {
+    color: var(--cor-primaria);
+}
+
+
+/* =========================
+   AÇÕES
+========================= */
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    flex-shrink: 0;
+}
+
+#btnCarrinho {
+    background: var(--cor-primaria);
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: var(--radius);
+}
+
+
+/* =========================
+   BUSCA
+========================= */
+
+.busca {
+    margin: 40px 0;
+}
+
+#campoBusca {
+    width: 100%;
+
+    padding: 15px;
+
+    border-radius: var(--radius);
+    border: 1px solid var(--borda);
+
+    font-size: 16px;
+
+    background: white;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.conteudo .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+
+/* =========================
+   PRODUTOS
+========================= */
+
+.produtos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 50px;
+    padding: 30px;
+
+    text-align: center;
+
+    background: white;
+}
