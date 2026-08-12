@@ -14,16 +14,13 @@ async function iniciarServidor() {
         console.log("======================================");
         console.log("✅ Banco de dados conectado.");
         console.log(`🚀 Servidor iniciado na porta ${PORT}`);
-        console.log(`🌐 http://localhost:${PORT}`);
         console.log("======================================");
 
-
-        app.listen(PORT, () => {
+        app.listen(PORT, "0.0.0.0", () => {
 
             console.log("API pronta para receber requisições.");
 
         });
-
 
     } catch (erro) {
 
@@ -33,8 +30,6 @@ async function iniciarServidor() {
         process.exit(1);
 
     }
-
 }
-
 
 iniciarServidor();
